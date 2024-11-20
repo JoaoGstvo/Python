@@ -1,0 +1,9 @@
+Tarefa: {'Nome': 'nawjnd', 'Descrição': 'dwadaw', 'Concluída': False}
+Tarefa: {'Nome': 'dawdwada', 'Descrição': 'dawdawdwa', 'Concluída': False}
+Tarefa: {'Nome': 'dadwad', 'Descrição': '1dawdwad', 'Concluída': False}
+Tarefa: {'Nome': 'dawdwada', 'Descrição': 'dawdawdwa', 'Concluída': False}
+Tarefa: {'Nome': 'dadwad', 'Descrição': '1dawdwad', 'Concluída': False}
+Tarefa: {'Nome': 'nawjnd', 'Descrição': 'dwadaw', 'Concluída': False}
+Tarefa: {'Nome': 'dawdwada', 'Descrição': 'dawdawdwa', 'Concluída': False}
+Tarefa: {'Nome': 'dadwad', 'Descrição': '1dawdwad', 'Concluída': False}
+Tarefa: {'Nome': 'Lavar', 'Descrição': 'lavar', 'Concluída': False}
