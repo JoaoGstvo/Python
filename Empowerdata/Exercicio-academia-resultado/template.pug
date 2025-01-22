@@ -1,0 +1,116 @@
+head
+  style.
+    .body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .dados {
+    background-color: #61759A;
+    color: #ffffff;
+    }
+    .dados_aluno {
+    margin-left: 33%;
+    font-size: 24px;
+    }
+    .nome {
+    background-color: #F5F5F5;
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 5px;
+    }
+    .nome>p {
+    font-weight: bold;
+    margin-left: 5px;
+    }
+    .input {
+    display: inline-block;
+    background-color: #F5F5F5;
+    width: 350px;
+    }
+    .input>p {
+    margin-left: 5px;
+    }
+    .imc {
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    }
+    .imc_input_ok {
+    display: inline-block;
+    background-color: #D4EDE4;
+    width: 350px;
+    height: 100px;
+    margin-left: 15px;
+    }
+    .imc_input_acima {
+    display: inline-block;
+    background-color: #FFDFDF;
+    width: 350px;
+    height: 100px;
+    }
+    .imc_input_ok > p {
+    margin-left: 10px;
+    }
+    .imc_input_acima > p {
+    margin-left: 10px;
+    }
+    .rodape {
+    margin-left: 200px;
+    }
+.logo
+  img(src='https://i.imgur.com/KUiTWQN.png' alt='logo')
+br
+br
+h1 Ficha de acompanhamento
+.dados
+  p.dados_aluno Dados do aluno
+br
+div
+  .nome
+    p Nome: 
+  .input
+    p {{dados["nome"]}}
+div
+  .nome
+    p Idade: 
+  .input
+    p {{dados["idade"]}}
+div
+  .nome
+    p Peso: 
+  .input
+    p {{dados["peso"]}}
+div
+  .nome
+    p Altura: 
+  .input
+    p {{dados["altura"]}}
+div
+  .nome
+    p C&aacute;lculo IMC: 
+  .input
+    p {{dados["imc"]}}
+if dados["status"].lower()=='sobrepeso'
+  div
+  .imc
+    p IMC = &iacute;ndice de massa corporal 
+  .imc_input_acima
+    p ATENÇÃO: seu IMC está acima do normal!
+else
+  div
+  .imc
+    p IMC = &iacute;ndice de massa corporal 
+  .imc_input_ok
+    p PARABÉNS: seu IMC está bom!
+br
+br
+br
+.rodape
+  .treinador
+    p ___________________________
+    p Treinador respons&aacute;vel
+  br
+  .data
+    p ___________________________
+    p Data
